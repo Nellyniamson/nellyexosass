@@ -1,0 +1,41 @@
+.header__button-enter{
+    width:25rem ;
+    height:10rem ;
+    font-family:$font-primary;
+    color:$color-text;
+    border-radius: $button-border-radius;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    outline: none;
+    background-color:$color-white;
+    transition: all .4s ;
+
+    &:hover{
+        transform: translateY(-.3rem);
+
+        &::after{
+            transform: scaleX(1.2) scaleY(1.3);
+            opacity: 0;
+        }
+    }
+
+    &:active{
+        transform: translateY(.1rem);
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: $button-border-radius;
+        background-color:$color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+}

@@ -1,0 +1,31 @@
+.header{
+    height: 70vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, .8),
+        rgba($color-primary ,.8)),
+        url(../images/research-4170441_1920.jpg);
+        background-size: cover;
+        border-bottom: 1px solid $color-white-transparent;
+
+    &__image{
+        width: 7rem;
+        height: 6rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        cursor: pointer;
+    }
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__welcome{
+        color:$color-white;
+        font-size: 7rem;
+        display: block;
+        margin-top: 10rem;
+    }
+}
